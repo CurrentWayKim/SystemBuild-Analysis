@@ -3,26 +3,26 @@
 ```mermaid 
 classDiagram  
     direction 
-    class Person{
+    class Person{
         <<abstract>>
         +name: str
         +phoneNumber: str
         +emailAddress: str
         +purchaseParkingPass()
     }
-    class Student{
+    class Student{
         +studentNumber: int
         +averageMark: int
         +isEligibleToEnroll(str) bool
         +getSeminarsTaken():int
     }
-    class Professor{
+    class Professor{
         -salary: int
         #staffNumber: int
         -yearsOfService: int
         +numberOfClaseses: int
     }
-    class Address{
+    class Address{
         +street: str
         +city: str
         +state: str
